@@ -1,0 +1,86 @@
+.container > div {
+	padding: 1em;
+	border-radius: 4px;
+	-webkit-box-shadow: 2px 3px 8px 1px rgba(153,153,153,1);
+	-moz-box-shadow: 2px 3px 8px 1px rgba(153,153,153,1);
+	box-shadow: 2px 3px 8px 1px rgba(153,153,153,1);
+}
+
+/*.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 1em;
+	grid-template-areas: 
+		"box1 box1 box2 box2"
+		"box1 box1 box2 box2"
+		"box1 box1 box3 box3"
+		"box4 box6 box3 box3"
+		"box5 box6 box7 box7"
+		"box5 box6 box7 box7";
+}*/
+
+.container {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 30px;
+	border: 30px solid rgba(67, 77, 81, 0.7);
+	border-radius: 20px;
+	/*grid*/
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	grid-gap: 1em;
+	grid-template-areas: 
+		"box1 box1 box2 box2" /*1*/
+		"box1 box1 box2 box2" /*2*/
+		"box1 box1 box2 box2" /*3*/
+		"box1 box1 box2 box2" /*4*/
+		"box1 box1 box3 box3" /*5*/
+		"box1 box1 box3 box3" /*6*/
+		"box4 box6 box3 box3" /*7*/
+		"box4 box6 box3 box3" /*8*/
+		"box4 box6 box7 box7" /*9*/
+		"box5 box6 box7 box7" /*10*/
+		"box5 box6 box7 box7" /*11*/
+		"box5 box6 box7 box7"; /*12*/
+}
+
+#box1 {
+	grid-area: box1;
+	background-color: rgb(252, 121, 40);
+}
+
+#box2 {
+	grid-area: box2;
+	background-color: rgba(67, 77, 81, 0.3);
+
+}
+
+#box3 {
+	grid-area: box3;
+	background-color: rgba(252, 121, 40, 0.4);
+}
+
+#box4 {
+	grid-area: box4;
+	background-color: rgba(252, 121, 40, 0.4);
+
+}
+
+#box5 {
+	grid-area: box5;
+	background-color: rgba(67, 77, 81, 0.3);
+
+}
+
+#box6 {
+	grid-area: box6;
+	background-color: rgba(67, 77, 81, 0.7);
+}
+
+#box7 {
+	grid-area: box7;
+	background-color: rgb(252, 121, 40);
+}
+
